@@ -1,10 +1,11 @@
+// This is the 'root' file that react will render
 import '../styles/global.css';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 function MyApp({ Component, pageProps }) {
 
   return (
     <ChallengesProvider>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </ChallengesProvider>
   )
 }
